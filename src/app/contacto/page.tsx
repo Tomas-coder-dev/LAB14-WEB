@@ -30,7 +30,7 @@ export default function Contacto() {
       await new Promise(resolve => setTimeout(resolve, 2000)); // Simulación
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -68,28 +68,6 @@ export default function Contacto() {
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
-        {/* Navigation */}
-        <nav className="fixed top-0 w-full z-50 bg-white/10 backdrop-blur-md border-b border-white/20">
-          <div className="container mx-auto px-6 py-4">
-            <div className="flex justify-between items-center">
-              <Link href="/" className="text-2xl font-bold text-white hover:text-purple-300 transition-colors">
-                Mi Web SEO
-              </Link>
-              <div className="hidden md:flex space-x-8">
-                <Link href="/" className="text-white hover:text-purple-300 transition-colors">
-                  Inicio
-                </Link>
-                <Link href="/blog" className="text-white hover:text-purple-300 transition-colors">
-                  Blog
-                </Link>
-                <Link href="/contacto" className="text-purple-300 font-semibold">
-                  Contacto
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
-
         <main className="pt-20">
           <div className="container mx-auto px-6 py-20">
             <motion.div
