@@ -1,0 +1,21 @@
+{
+  "name": "Mi Web SEO",
+  "short_name": "MiWebSEO",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#8b5cf6",
+  "theme_color": "#8b5cf6",
+  "description": "Sitio web profesional especializado en desarrollo con Next.js, SEO avanzado y soluciones tecnológicas innovadoras.",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
